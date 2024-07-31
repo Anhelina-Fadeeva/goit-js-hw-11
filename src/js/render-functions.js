@@ -17,12 +17,14 @@ export function renderImages(images) {
     </a>
   `).join('');
 
-  const lightbox = new SimpleLightbox('.gallery-item', { captions: true,
-  captionSelector: 'img',
-  captionType: 'attr',
-  captionsData: 'alt',
-  captionPosition: 'bottom',
-  captionDelay: 250, });
+  const lightbox = new SimpleLightbox('.gallery-item', { 
+    captions: true,
+    captionSelector: 'img',
+    captionType: 'attr',
+    captionsData: 'alt',
+    captionPosition: 'bottom',
+    captionDelay: 250,
+  });
   lightbox.refresh();
 }
 
